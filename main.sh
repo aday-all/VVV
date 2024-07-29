@@ -380,7 +380,6 @@ function enable_services(){
     systemctl enable --now client
     systemctl enable --now server
     systemctl enable --now fail2ban
-    wget -O /root/.config/rclone/rclone.conf "${REPO}rclone/rclone.conf" >/dev/null 2>&1
 }
 
 function install_all() {
@@ -394,7 +393,6 @@ function install_all() {
     download_config >> /root/install.log
     enable_services >> /root/install.log
     tambahan >> /root/install.log
-    pasang_rclone >> /root/install.log
 }
 
 function finish(){
