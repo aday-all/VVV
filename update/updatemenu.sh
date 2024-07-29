@@ -19,16 +19,13 @@ green='\e[0;32m'
 TANGGAL=$(date '+%Y-%m-%d')
 TIMES="10"
 NAMES=$(whoami)
-IMP="wget -q -O"    
-CHATID="1036440597"
+IMP="wget -q -O"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="2145515560:AAE9WqfxZzQC-FYF1VUprICGNomVfv6OdTU"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-REPO="https://raw.githubusercontent.com/NevermoreSSH/VVV/main/update/"
+REPO="https://raw.githubusercontent.com/aday-all/VVV/main/update/"
 APT="apt-get -y install"
 start=$(date +%s)
 
@@ -41,9 +38,6 @@ echo "0 5 * * * root reboot" >> /etc/crontab
 apt install htop -y 
 apt install vnstat -y 
 apt install resolvconf -y 
-
-# install UDP Custom (test)
-#wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/Tunnel/udp.sh && bash udp.sh
 
 # download menu
 cd /usr/sbin
