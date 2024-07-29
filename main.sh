@@ -218,15 +218,6 @@ function install_slowdns(){
     bash /tmp/nameserver | tee /root/install.log
     print_success "SlowDNS"
 }
-
-### Install Rclone
-function pasang_rclone() {
-    print_install "Installing Rclone"
-    print_success "Installing Rclone"
-    curl "${REPO}bin/rclone" | bash >/dev/null 2>&1
-    print_success "Rclone"
-}
-
 ### Take Config
 function download_config(){
     print_install "Install configuration package configuration"
