@@ -320,11 +320,7 @@ function tambahan(){
     gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
     curl -sL "$gotop_link" -o /tmp/gotop.deb
     dpkg -i /tmp/gotop.deb >/dev/null 2>&1
-
-    # > Install BBR Plus
-    #wget -qO /tmp/bbr.sh "${REPO}server/bbr.sh" >/dev/null 2>&1
-    #chmod +x /tmp/bbr.sh && bash /tmp/bbr.sh
-
+    
     # > Make a swap of 1GB
     dd if=/dev/zero of=/swapfile bs=1024 count=1048576
     mkswap /swapfile
