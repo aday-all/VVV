@@ -7,6 +7,10 @@
   
 ### INSTALL SCRIPT
 
+Buat Akses Root Di VPS /Root VPS
+Untuk Mengizinkan Root Dan Ubah Password
+<pre><code>wget -qO- -O vpsroot.sh https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/vpsroot.sh && bash vpsroot.sh</code></pre>
+
 Update Debian 9/10/11
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
 Update Ubuntu 18/20
