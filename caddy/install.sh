@@ -1,8 +1,8 @@
 #!/bin/bash
-REPO="https://raw.githubusercontent.com/NevermoreSSH/VVV/main/"
+REPO="https://raw.githubusercontent.com/aday-all/VVV/main/"
 
-curl -1sLf 'https://raw.githubusercontent.com/NevermoreSSH/VVV/main/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg --yes  >/dev/null 2>&1
-curl -1sLf 'https://raw.githubusercontent.com/NevermoreSSH/VVV/main/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list  >/dev/null 2>&1
+curl -1sLf 'https://raw.githubusercontent.com/aday-all/VVV/main/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg --yes  >/dev/null 2>&1
+curl -1sLf 'https://raw.githubusercontent.com/aday-all/VVV/main/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list  >/dev/null 2>&1
 sudo apt install caddy
 
 ### Tambah konfigurasi Caddy
@@ -14,7 +14,7 @@ function caddy(){
     cat >/etc/caddy/Caddyfile <<-EOF
 $domain:443
 {
-    tls taibabi17@gmail.com
+    tls xray@gmail.com
     encode gzip
 
     handle_path /vless {
