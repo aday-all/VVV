@@ -14,7 +14,7 @@ Untuk Mengizinkan Root Dan Ubah Password
 Update Debian 9/10/11
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
 Update Ubuntu 18/20
-<pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot</code></pre>
+<pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot</code></pre>
 Script Setup ( ipv4 only )
 <pre><code>apt install -y wget screen && wget -q https://raw.githubusercontent.com/aday-all/VVV/main/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
 or ( ipv4 + ipv6 )
