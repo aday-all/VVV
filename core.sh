@@ -15,6 +15,29 @@ NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
 
+### Status
+function print_ok() {
+    echo -e "${OK} ${BLUE} $1 ${FONT}"
+}
+function print_install() {
+	echo -e "${YELLOW} ============================================ ${FONT}"
+    echo -e "${YELLOW} # $1 ${FONT}"
+	echo -e "${YELLOW} ============================================ ${FONT}"
+    sleep 1
+}
+
+function print_error() {
+    echo -e "${ERROR} ${REDBG} $1 ${FONT}"
+}
+
+function print_success() {
+    if [[ 0 -eq $? ]]; then
+		echo -e "${Green} ============================================ ${FONT}"
+        echo -e "${Green} # $1 Successfully installed"
+		echo -e "${Green} ============================================ ${FONT}"
+        sleep 2
+    fi
+}
 ### Install Xray
 function install_xray(){
     print_install "Installing the latest Xray module"
