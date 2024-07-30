@@ -139,7 +139,7 @@ echo -e "\033[1;93m│  ${grenbo}7.${NC} \033[0mBACKUP & RESTORE${NC} ${grenbo}1
 echo -e "\033[1;93m│  "
 echo -e "\033[1;93m│  ${grenbo}15.${NC} \033[0mDNS CHANGER${NC}     ${grenbo}16.${NC} \033[0mNETFLIX CHECKER${NC}"
 echo -e "\033[1;93m│  ${grenbo}17.${NC} \033[0mSWAP RAM${NC}"
-echo -e "\033[1;93m│  
+echo -e "\033[1;93m│  "
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 echo -e "\033[1;93m┌───────────────────────────────────────────┐\033[0m"
