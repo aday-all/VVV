@@ -7,6 +7,9 @@
   
 ### INSTALL SCRIPT
 
+Ram
+<pre><code>wget -qO- -O ram.sh https://raw.githubusercontent.com/aday-all/VVV/main/ram.sh && bash ram.sh</code></pre>
+
 Buat Akses Root Di VPS /Root VPS
 Untuk Mengizinkan Root Dan Ubah Password
 <pre><code>wget -qO- -O vpsroot.sh https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/vpsroot.sh && bash vpsroot.sh</code></pre>
