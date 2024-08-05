@@ -1,8 +1,6 @@
 #!/bin/bash
 
 echo "Current Path: $PWD"
-fi
-
 echo "Start Clash Core Download !"
 #core download url
 core_dir="${2:-files/etc/openclash/core}"
