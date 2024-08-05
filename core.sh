@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Current Path: $PWD"
+fi
 
 echo "Start Clash Core Download !"
 #core download url
